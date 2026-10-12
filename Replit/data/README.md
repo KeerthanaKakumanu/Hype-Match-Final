@@ -1,0 +1,1 @@
+Seed dataset: 5 source-listed creator/channel records. Read each record's sourceUrl, sourceName, lastChecked and verificationNote. `Source-listed` is not independent identity verification. Import template is available in the Admin screen.
