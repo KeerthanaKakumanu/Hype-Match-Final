@@ -1,0 +1,1 @@
+import React from 'react'; import { createRoot } from 'react-dom/client'; import HypeApp from './hype-app.jsx'; import './hype-style.css'; createRoot(document.getElementById('root')).render(<React.StrictMode><HypeApp /></React.StrictMode>);
