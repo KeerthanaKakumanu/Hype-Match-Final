@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#ff6a22"><meta name="description" content="HyperMatch — a source-aware creator-brand marketplace focused on Telugu creators."><title>H-Project | HyperMatch Creator Marketplace</title></head>
+<body><div class="app-shell"><aside class="sidebar" id="sidebar"><a class="brand" href="#home"><span class="brand-mark">H<span>✦</span></span><span>hypermatch<small>CREATOR MARKETPLACE</small></span></a><div class="workspace"><div class="workspace-icon">HM</div><div><b>HyperMatch Studio</b><small>Local demo workspace</small></div><span class="chevron">⌄</span></div><div class="nav-label">WORKSPACE</div><nav id="nav"><button class="nav-item active" data-view="home"><span>⌂</span> Overview</button><button class="nav-item" data-view="discover"><span>◉</span> Discover creators <i id="nav-count">0</i></button><button class="nav-item" data-view="brandcampaigns"><span>✦</span> Brand campaigns</button><button class="nav-item" data-view="categories"><span>▦</span> Categories</button><button class="nav-item" data-view="matching"><span>✧</span> HyAI matching</button><button class="nav-item" data-view="briefs"><span>▤</span> Campaign briefs</button><button class="nav-item" data-view="campaigns"><span>↗</span> Campaign manager</button><button class="nav-item" data-view="shortlist"><span>♡</span> Shortlist & compare <i id="saved-count">0</i></button><button class="nav-item" data-view="messages"><span>▱</span> Collaboration inbox</button><button class="nav-item" data-view="analytics"><span>▥</span> Budget & analytics</button><button class="nav-item" data-view="admin"><span>⚙</span> Admin & data import</button></nav><div class="sidebar-bottom"><div class="mini-ai"><div class="ai-orb">✦</div><b>Meet HyAI</b><p>Your local campaign copilot. No API key needed.</p><button class="btn btn-light btn-sm" data-go="matching">Try HyAI ↗</button></div><div class="profile-mini"><div class="avatar avatar-dark">HM</div><div><b>Demo account</b><small id="profile-role">Choose a role</small></div><span class="status-dot"></span></div></div></aside>
+<main class="main"><header class="topbar"><button class="mobile-menu" id="mobile-menu">☰</button><div class="crumb">Workspace <span>/</span> <b id="crumb-title">Overview</b></div><div class="top-actions"><span class="data-pill"><i></i> Source-aware dataset</span><button class="icon-button" title="Notifications" id="notification">♧</button><button class="role-switch" id="role-switch" title="Switch demo role"><span id="role-label">Demo</span> ▾</button></div></header><div id="app-content" class="content"></div><footer class="footer"><span>HyperMatch © 2026 · Built for creators, made for brands.</span><span>Vite demo · Data saved in this browser</span></footer></main></div><div id="login-screen" class="login-screen">
+  <div class="login-card">
+    <div class="brand-mark login-mark">H<span>✦</span></div>
+    <div class="eyebrow">CREATOR × BRAND COLLABORATION</div>
+    <h1>Welcome to <em>HyperMatch</em></h1>
+    <p>Sign in or create a local demo account to explore the creator-brand marketplace.</p>
+    <div class="login-roles">
+      <button type="button" data-role-login="creator"><span>◉</span><b>Explore as Creator</b><small>Profile, portfolio and campaign opportunities</small></button>
+      <button type="button" data-role-login="brand"><span>✦</span><b>Explore as Brand</b><small>Find creators, build briefs and plan budgets</small></button>
+      <button type="button" data-role-login="admin"><span>⚙</span><b>Explore as Admin</b><small>Review evidence, import data and export CSV</small></button>
+    </div>
+    <div class="auth-divider"><span>OR USE YOUR ACCOUNT</span></div>
+    <div class="auth-tabs"><button type="button" class="auth-tab active" data-auth-mode="login">Sign in</button><button type="button" class="auth-tab" data-auth-mode="signup">Create account</button></div>
+    <form id="auth-form" class="auth-form">
+      <div class="field" id="auth-name-wrap" hidden><label for="auth-name">Full name</label><input id="auth-name" name="name" autocomplete="name" placeholder="Your name"></div>
+      <div class="field"><label for="auth-email">Email address</label><input id="auth-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+      <div class="field"><label for="auth-password">Password</label><input id="auth-password" name="password" type="password" minlength="6" autocomplete="current-password" placeholder="At least 6 characters" required></div>
+      <div class="field" id="auth-role-wrap" hidden><label for="auth-role">I am joining as</label><select id="auth-role" name="role"><option value="creator">Creator</option><option value="brand">Brand / Agency</option></select></div>
+      <button class="btn btn-primary auth-submit" id="auth-submit" type="submit">Sign in</button>
+      <p class="auth-note">Demo authentication only. Accounts are saved in this browser on this device; passwords are not protected for production use.</p>
+      <p class="auth-switch-copy" id="auth-switch-copy">New here? <button type="button" data-auth-mode="signup">Create an account</button></p>
+    </form>
+  </div>
+</div><div id="toast" class="toast" role="status"></div><div id="modal-root"></div><script type="module" src="/src/main.js"></script></body></html>
