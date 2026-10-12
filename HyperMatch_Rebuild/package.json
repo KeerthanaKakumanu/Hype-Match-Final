@@ -1,9 +1,0 @@
-{
-  "name": "hypermatch-marketplace-demo",
-  "version": "1.0.0",
-  "private": true,
-  "description": "HyperMatch creator-brand marketplace demo with local no-key HyAI-style matching and JSON persistence",
-  "main": "server.js",
-  "scripts": {"start":"node server.js","check":"node --check server.js && node --check app.js"},
-  "engines": {"node": ">=18"}
-}
